@@ -1,0 +1,47 @@
+.btn{
+    display: inline-block;
+    padding: 77px;
+    background-image: 
+        url(images/botao-9-pedacos_01.png),
+        url(images/botao-9-pedacos_03.png),
+        url(images/botao-9-pedacos_07.png),
+        url(images/botao-9-pedacos_09.png),
+        url(images/botao-9-pedacos_02.png),
+        url(images/botao-9-pedacos_04.png),
+        url(images/botao-9-pedacos_06.png),
+        url(images/botao-9-pedacos_08.png),
+        url(images/botao-9-pedacos_05.png);
+    background-repeat: 
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        repeat,
+        repeat,
+        repeat,
+        repeat;
+    background-position-x: 
+        left,
+        right,
+        left,
+        right,
+        center,
+        left,
+        right,
+        center,
+        center;
+    background-position-y: 
+        top,
+        top,
+        bottom,
+        bottom,
+        top,
+        center,
+        center,
+        bottom,
+        center;
+    font-size: 24px;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+}

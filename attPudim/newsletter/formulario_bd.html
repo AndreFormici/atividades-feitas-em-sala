@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario-BD</title>
+    <style>
+        *{
+            font-family: arial;
+        }
+        form{
+            width: 550px;
+            margin: auto;
+            border: 2px solid #ccc;
+            padding: 1em;
+        }
+        form div{
+            margin-top: 1em;
+        }
+        label{
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }
+        input{
+            width: 400px;
+            border: 1px solid #ccc;
+            background-color: lightblue;
+            height: 30px;
+            border-radius: 5px;
+        }
+        h1{
+            color: lightblue;
+            text-align: center;
+        }
+        #button{
+            background-color: lightblue;
+            border: none;
+            margin-left: 100px;
+            padding: 10px 180px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="enviar.php" method="post">
+        <h1>Formulário</h1>
+        <div>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" placeholder="Digite aqui seu nome" id="nome">
+        </div>    
+        <div>
+            <label for="email">Email: </label>
+            <input type="text" name="email" placeholder="Digite aqui seu email" id="email">
+        </div>
+        <div>
+            <input type="submit" value="Enviar" id="button">
+        </div>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+body{
+    background-color: #fff;
+    background-image: url(images/body.jpg);
+    background-repeat: repeat-x;
+}
+div.janela{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 600px;
+    box-shadow: 8px 8px 20px 8px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.janela-titulo{
+    text-align: center;
+    color: #ffff00;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 60px;
+}
+.icone-alerta{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-image: url(images/alerta.png);
+}
+.janela-botao{
+    border-style: none;
+    width: 138px;
+    height: 138px;
+    background-color: transparent;
+    background-image: url(images/okbuton.png);
+    font-size: 0px;
+}
+.janela-botao, .janela-botao:focus{
+    outline-color: red;
+}
+.janela-rodape{
+    text-align: center;
+}

@@ -1,0 +1,44 @@
+.chama{
+    display: inline-block;
+    padding: 45px;
+    background-image: 
+        url(../css/pedaços/images/70_01.jpg),
+        url(../css/pedaços/images/70_03.jpg),
+        url(../css/pedaços/images/70_07.jpg),
+        url(../css/pedaços/images/70_09.jpg),
+        url(../css/pedaços/images/70_02.jpg),
+        url(../css/pedaços/images/70_04.jpg),
+        url(../css/pedaços/images/70_06.jpg),
+        url(../css/pedaços/images/70_08.jpg),
+        url(../css/pedaços/images/70_05.jpg);
+    background-repeat:
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        repeat-x,
+        repeat-y,
+        repeat-y,
+        repeat-x,
+        repeat;
+    background-position-x: 
+        left,
+        right,
+        left,
+        right,
+        center,
+        left,
+        right,
+        center,
+        center;
+    background-position-y: 
+        top,
+        top,
+        bottom,
+        bottom,
+        top,
+        center,
+        center,
+        bottom,
+        center;
+}

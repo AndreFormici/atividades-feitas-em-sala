@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade do Salmo</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function mudaCor(){
+            var cor = document.getElementById("cor").value;
+            var fontcolor = document.getElementsByTagName("li");
+            for(var i = 0; i < fontcolor.length; i++){
+                fontcolor[i].style.color=cor;
+            }
+        }
+    </script>
+    <p>
+        <label for="cor">Selecione a cor desejada: </label>
+        <input id="cor" type="color" onchange="mudaCor()">
+    </p>
+    <p>
+        <h1>Marcas de carro</h1>
+        <ul>
+            <li>Ford</li>
+            <li>Honda</li>
+            <li>BMW</li>
+            <li>Audi</li>
+            <li>Fiat</li>
+            <li>Kia</li>
+        </ul>
+    </p>
+</body>
+</html>

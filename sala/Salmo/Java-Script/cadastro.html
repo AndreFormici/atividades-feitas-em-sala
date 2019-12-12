@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="comportamento.js"></script>
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="formulario.html" method="POST" onsubmit="return validacao();">
+        <p>*Campos de preenchimento obrigatório.</p>
+        <div>
+            <label for="name">*Nome: </label>
+            <input type="text" id="nome"/>
+        </div>
+        <div>
+            <label for="senha">Senha: </label>
+            <input type="password" id="senha">
+            <button type="button" id="btnsenha" onclick="mudatype('senha','btnsenha')">@</button>
+        </div>
+        <div>
+            <label for="confirmacao">Confirme sua senha: </label>
+            <input type="password" id="confirmacao" onblur="testaSenha()">
+            <button type="button" id="btnconfirma" onclick="mudatype('confirmacao','btnconfirma')">@</button>
+            <label for="confirma" id="errosenha"></label>
+        </div>
+        <div>
+            <label for="idade">Idade: </label>
+            <input type="number" id="idade">
+        </div>
+        <fieldset>
+            <legend>Sexo: </legend>
+            <input type="radio" name="sexo" id="Masculino">Masculino;
+            <input type="radio" name="sexo" id="Feminino">Feminino;
+            <input type="radio" name="sexo" id="Transexual">Transexual;
+            <input type="radio" name="sexo" id="PNinformado">Prefiro não cadastrar;
+        </fieldset>
+        <div>
+            <label for="sexo">Sexo: </label>         
+        </div>
+        <div>
+            <legend>Áreas de interesse: </legend>
+            <input type="checkbox" name="areas[]" id="informatica" value="Informática"/>
+            <label for="informatica">Informática</label>
+            <input type="checkbox" name="areas[]" id="mecanica" value="Mecânica"/>
+            <label for="mecanica">Mecânica</label>
+            <input type="checkbox" name="areas[]" id="eletronica" value="Eletrônica"/>
+            <label for="eletronica">Eletrônica</label>
+            <input type="checkbox" name="areas[]" id="front" value="Front"/>
+            <label for="front">Front end</label>
+            <input type="checkbox" name="areas[]" id="back" value="Back"/>
+            <label for="back">Back end;</label>
+            <button type="button" id="mostraCB" onclick="showCB()">Visualizar áreas selecionadas</button>
+        </div>
+        <div>
+            <label for="CEP">CEP: </label>
+            <input type="text" id="CEP">
+        </div>
+        <div>
+            <button type="submit" id="cadastro">Cadastrar</button>
+        </div>
+    </form>
+</body>
+</html>

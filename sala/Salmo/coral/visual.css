@@ -1,0 +1,56 @@
+@charset "utf-8";
+*{
+    box-sizing: border-box;
+}
+body{ margin: 0px;}
+header{
+    background-image: url(img/project-management.png);
+    background-color: green;
+    background-repeat: no-repeat;
+    background-position: 10px, 10px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: flex-end;
+    padding: 10px;
+}
+header p{
+    width: 100%;
+    text-align: right;
+    margin: 0px;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+#slideshow{
+    background-color: #ccc;
+}
+#slideshow #capa-slideshow{
+    width: 100%;
+}
+#opcoes-slideshow{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 2px;
+    margin: 0px;
+}
+#opcoes-slideshow li{
+    margin: 0.2em 0.5em 0.2em 0.5em;
+    width: 10px;
+}
+#opcoes-slideshow li img{
+    width: 100%;
+}
+nav a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+nav a p, nav a img{
+    width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function mudaTamanho(){
+            var tamanho = document.getElementById("tamanho").value;
+            var paragrafos = document.getElementsByTagName("p");
+            for(var i = 0; i < paragrafos.length; i++){
+                paragrafos[i].style.fontSize = tamanho;
+            }
+        }
+    </script>
+    <p>
+        <label for="tamanho"> Tamanho da fonte</label>
+        <select id="tamanho" onchange="mudaTamanho()">
+            <option value="8px">8 px</option>
+            <option value="10px">10 px</option>
+            <option value="12px">12 px</option>
+            <option value="14px">14 px</option>
+            <option value="16px">16 px</option>
+            <option value="18px">18 px</option>
+        </select>
+    </p>
+    <h1> texto</h1>
+    <p>
+        muitas coisas escritas sem importância ou relevancia nenhuma de acordo com o código;
+    </p>
+</body>
+</html>

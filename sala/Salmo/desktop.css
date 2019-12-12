@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+main{width: 60%;}
+aside{
+    display: block;
+    background: black;
+    width: 20%;
+}
+nav{
+    display: block;
+}
+header img{display: none;}
